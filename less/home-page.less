@@ -1,6 +1,36 @@
+
+.container {
+    padding-top: 8rem;
+    // background-color: red;
+}
 .categories {
-    img {
-        height: 10rem;
-        width: 10rem;
+    // background-color: yellow;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        // background-color: orange;
+        padding: 1rem;
+        margin: 0.5 rem;
+        // border: 1px solid red;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 20rem;
+            width: 20rem;
+            padding: 1rem;
+        }
+        p {
+            // background-color: green;
+            width: auto;
+            height: 100%;
+            font-size: 2rem;
+            color: @nav-color;
+        }
     }
 }
