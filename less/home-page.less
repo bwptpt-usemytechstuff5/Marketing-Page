@@ -1,15 +1,26 @@
 
 .container {
-    padding-top: 8rem;
+    padding-top: 5rem;
     // background-color: red;
 }
+
+
+.info {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    background-color: beige;
+}
+
 .categories {
-    // background-color: yellow;
+    background-color: beige;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 5vh;
 
     div {
         display: flex;
@@ -24,13 +35,45 @@
             height: 20rem;
             width: 20rem;
             padding: 1rem;
+            margin: 0.1rem;
+            background-color: aqua;
+            border-radius: 1rem;
         }
         p {
             // background-color: green;
             width: auto;
             height: 100%;
+            padding-top: 0.5rem;
             font-size: 2rem;
             color: @nav-color;
+        }
+    }
+}
+
+.how {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 2rem;
+    padding-top: 10vh;
+    background-color: burlywood;
+
+    .how-words {
+        width: 50%;
+        line-height: 3rem;
+
+        h2 {
+            font-weight: bold;
+            font-size: large;
+        }
+
+        h3 {
+            font-weight: bold;
+            font-size: medium;
+        }
+        .btn {
+            .button (20rem, 5rem, 2rem)
         }
     }
 }

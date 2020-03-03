@@ -137,7 +137,7 @@ header {
   width: 100%;
   height: 5rem;
   font-size: 2rem;
-  background-color: white;
+  background-color: cornsilk;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -171,9 +171,17 @@ header nav a {
   text-decoration: none;
 }
 .container {
-  padding-top: 8rem;
+  padding-top: 5rem;
+}
+.info {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+  background-color: beige;
 }
 .categories {
+  background-color: beige;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -192,10 +200,52 @@ header nav a {
   height: 20rem;
   width: 20rem;
   padding: 1rem;
+  margin: 0.1rem;
+  background-color: aqua;
+  border-radius: 1rem;
 }
 .categories div p {
   width: auto;
   height: 100%;
+  padding-top: 0.5rem;
   font-size: 2rem;
   color: black;
+}
+.how {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 2rem;
+  padding-top: 10vh;
+  background-color: burlywood;
+}
+.how .how-words {
+  width: 50%;
+  line-height: 3rem;
+}
+.how .how-words h2 {
+  font-weight: bold;
+  font-size: large;
+}
+.how .how-words h3 {
+  font-weight: bold;
+  font-size: medium;
+}
+footer {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: chocolate;
+}
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+footer nav a {
+  text-decoration: none;
+  color: white;
+  font-size: medium;
 }
