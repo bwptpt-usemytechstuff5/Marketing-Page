@@ -128,6 +128,10 @@ table {
 }
 * {
   box-sizing: border-box;
+  max-width: 1000px;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
 }
 html {
   font-size: 62.5%;
@@ -137,7 +141,7 @@ header {
   width: 100%;
   height: 5rem;
   font-size: 2rem;
-  background-color: cornsilk;
+  background-color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -172,21 +176,21 @@ header nav a {
 }
 .container {
   padding-top: 5rem;
+  max-width: 1000px;
 }
 .info {
   font-size: 2rem;
   display: flex;
   justify-content: center;
   padding: 3rem 0;
-  background-color: beige;
 }
 .categories {
-  background-color: beige;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  padding-bottom: 5vh;
 }
 .categories div {
   display: flex;
@@ -199,10 +203,13 @@ header nav a {
 .categories div img {
   height: 20rem;
   width: 20rem;
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 0.1rem;
-  background-color: aqua;
+  border: 1px solid lightgreen;
   border-radius: 1rem;
+}
+.categories div img:hover {
+  background-color: lightgreen;
 }
 .categories div p {
   width: auto;
@@ -218,7 +225,7 @@ header nav a {
   flex-direction: row;
   font-size: 2rem;
   padding-top: 10vh;
-  background-color: burlywood;
+  border-top: 1px solid lightgrey ;
 }
 .how .how-words {
   width: 50%;
@@ -226,18 +233,36 @@ header nav a {
 }
 .how .how-words h2 {
   font-weight: bold;
-  font-size: large;
+  font-size: xx-large;
+  margin-bottom: 3vh;
 }
 .how .how-words h3 {
   font-weight: bold;
-  font-size: medium;
+  font-size: larger;
+  padding-top: 2vh;
+}
+.how .btn {
+  display: flex;
+  width: 20rem;
+  height: 5rem;
+  color: white;
+  font-size: 2rem;
+  background-color: lightgreen;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+}
+.how-image {
+  margin-bottom: 2rem;
 }
 footer {
   height: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: chocolate;
+  background-color: white;
+  border-top: 1px solid lightgrey;
 }
 footer nav {
   display: flex;
@@ -246,6 +271,6 @@ footer nav {
 }
 footer nav a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: medium;
 }

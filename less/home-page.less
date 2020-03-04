@@ -2,6 +2,7 @@
 .container {
     padding-top: 5rem;
     // background-color: red;
+    max-width: 1000px;
 }
 
 
@@ -10,11 +11,11 @@
     display: flex;
     justify-content: center;
     padding: 3rem 0;
-    background-color: beige;
+    // background-color: beige;
 }
 
 .categories {
-    background-color: beige;
+    // background-color: beige;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -34,10 +35,13 @@
         img {
             height: 20rem;
             width: 20rem;
-            padding: 1rem;
+            padding: 0.5rem;
             margin: 0.1rem;
-            background-color: aqua;
+            border: 1px solid lightgreen;
             border-radius: 1rem;
+        }
+        img:hover {
+            background-color: lightgreen;
         }
         p {
             // background-color: green;
@@ -57,7 +61,8 @@
     flex-direction: row;
     font-size: 2rem;
     padding-top: 10vh;
-    background-color: burlywood;
+    border-top: 1px solid lightgrey ;
+    // background-color:;
 
     .how-words {
         width: 50%;
@@ -65,15 +70,21 @@
 
         h2 {
             font-weight: bold;
-            font-size: large;
+            font-size: xx-large;
+            margin-bottom: 3vh;
         }
 
         h3 {
             font-weight: bold;
-            font-size: medium;
+            font-size: larger;
+            padding-top: 2vh;
         }
-        .btn {
-            .button (20rem, 5rem, 2rem)
-        }
+      
     }
+    .btn {
+        .button-info(20rem, 5rem, 2rem);
+    }
+}
+.how-image {
+    margin-bottom: 2rem;
 }
