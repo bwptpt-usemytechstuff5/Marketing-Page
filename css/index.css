@@ -174,15 +174,25 @@ header nav {
 header nav a {
   text-decoration: none;
 }
+@media (max-width: 800px) {
+  header nav {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    font-size: medium;
+  }
+}
 .container {
+  box-sizing: border-box;
   padding-top: 5rem;
   max-width: 1000px;
 }
 .info {
   font-size: 2rem;
-  display: flex;
-  justify-content: center;
   padding: 3rem 0;
+  text-align: center;
 }
 .categories {
   width: 100%;
@@ -191,6 +201,22 @@ header nav a {
   flex-direction: row;
   justify-content: center;
   padding-bottom: 5vh;
+}
+@media (max-width: 500px) {
+  .categories {
+    flex-direction: column;
+    width: 100%;
+  }
+  .categories .gaming,
+  .categories .dj,
+  .categories .movie,
+  .categories .office,
+  .categories .party,
+  .categories .fitness,
+  .categories .printer,
+  .categories .medical {
+    display: none;
+  }
 }
 .categories div {
   display: flex;
@@ -207,6 +233,11 @@ header nav a {
   margin: 0.1rem;
   border: 1px solid lightgreen;
   border-radius: 1rem;
+}
+@media (max-width: 800px) {
+  .categories div img {
+    border-radius: 50%;
+  }
 }
 .categories div img:hover {
   background-color: lightgreen;
@@ -253,8 +284,18 @@ header nav a {
   justify-content: center;
   margin: 5rem 0;
 }
+@media (max-width: 500px) {
+  .how {
+    text-align: center;
+  }
+}
 .how-image {
   margin-bottom: 2rem;
+}
+@media (max-width: 800px) {
+  .how-image {
+    display: none;
+  }
 }
 footer {
   height: 5vh;
@@ -268,6 +309,11 @@ footer nav {
   display: flex;
   justify-content: space-between;
   width: 30%;
+}
+@media (max-width: 500px) {
+  footer nav {
+    width: 100%;
+  }
 }
 footer nav a {
   text-decoration: none;

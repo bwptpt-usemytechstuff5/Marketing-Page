@@ -1,21 +1,18 @@
 
 .container {
+    box-sizing: border-box;
     padding-top: 5rem;
-    // background-color: red;
     max-width: 1000px;
 }
 
 
 .info {
     font-size: 2rem;
-    display: flex;
-    justify-content: center;
     padding: 3rem 0;
-    // background-color: beige;
+    text-align: center;
 }
 
 .categories {
-    // background-color: beige;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -23,15 +20,24 @@
     justify-content: center;
     padding-bottom: 5vh;
 
+    
+    @media @mobile {
+        flex-direction: column;
+        width: 100%;
+
+        .gaming, .dj, .movie, .office, .party, .fitness, .printer, .medical {
+            display: none;
+        }
+    }
+
     div {
         display: flex;
         flex-direction: column;
-        // background-color: orange;
         padding: 1rem;
         margin: 0.5 rem;
-        // border: 1px solid red;
         justify-content: center;
         align-items: center;
+
         img {
             height: 20rem;
             width: 20rem;
@@ -39,12 +45,16 @@
             margin: 0.1rem;
             border: 1px solid lightgreen;
             border-radius: 1rem;
+
+            @media @tablet {
+                border-radius: 50%; 
+                }
         }
+      
         img:hover {
             background-color: lightgreen;
         }
         p {
-            // background-color: green;
             width: auto;
             height: 100%;
             padding-top: 0.5rem;
@@ -62,7 +72,6 @@
     font-size: 2rem;
     padding-top: 10vh;
     border-top: 1px solid lightgrey ;
-    // background-color:;
 
     .how-words {
         width: 50%;
@@ -84,7 +93,14 @@
     .btn {
         .button-info(20rem, 5rem, 2rem);
     }
+
+    @media @mobile{
+        text-align: center;
+    }
 }
 .how-image {
     margin-bottom: 2rem;
+    @media @tablet{
+        display: none;
+    }
 }
