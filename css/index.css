@@ -136,6 +136,7 @@ table {
 html {
   font-size: 62.5%;
   color: black;
+  margin: 0 auto;
 }
 header {
   width: 100%;
@@ -276,6 +277,7 @@ header nav a {
   display: flex;
   width: 20rem;
   height: 5rem;
+  text-decoration: none;
   color: white;
   font-size: 2rem;
   background-color: lightgreen;
